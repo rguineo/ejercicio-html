@@ -1,24 +1,3 @@
 
-.titulo {
-	color: #18A878;
-	text-align: center;
-}
-
-p {
-	color: #A88405;
-	font-weight: bold;
-}
-
-.parrafo1 {
-	color:  white;
-	background: #5465FF;
-}
-
-.parrafo2 {
-	color: #000000;
-}
-
-.tabla-datos td, tr, th{
-	border:  1px solid;
-}
+.titulo {color: #18A878;text-align: center;}p {color: #A88405;font-weight: bold;}.parrafo1 {color:  white;background: #5465FF;}.parrafo2 {color: #000000;}.tabla-datos td, tr, th{border:  1px solid;}
 
