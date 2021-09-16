@@ -19,6 +19,69 @@
   <body>
 
     <div class="container">
+
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Active</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled">Disabled</a>
+      </li>
+    </ul>
+
+    <br><br>
+
+      <!-- Alertas -->
+
+      <div class="alert alert-success" role="alert">
+        A simple success alert—check it out!
+      </div>
+
+
+      <!-- Colapsar -->
+        <p>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Colapsar
+        </a>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Button with data-bs-target
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+        </div>
+      </div>
+
+
+      <!-- Dropdown -->
+
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+
+
+
       <br>
       <span><i class="fa fa-user fa-2x"></i> Users</span>
       <br><br>
@@ -27,9 +90,10 @@
       <span><i class="fas fa-sign-out-alt fa-2x"></i> Sign Out</span>
 
 
-      <br>
+      <br><br>
 
 
+      <!-- Acordeon -->
 
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
@@ -81,6 +145,43 @@
           </div>
         </div>
       </div>
+    <!-- Modal -->
+      <!-- Button trigger modal -->
+      <br><br>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Lanzar Modal
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color: purple;">
+              <h5 class="modal-title" id="staticBackdropLabel" style="color: white;">Modal Formulario</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
 
 
 

@@ -1,0 +1,30 @@
++ Integrar Bootstrap
+	+ https://getbootstrap.com/docs/5.1/getting-started/introduction/
++ Revision algunos componentes bootstrap
+	+ Breakpoint
+	+ Containers
+	+ Columnas
+	+ Tablas
+	+ Formularios
+		+ Form Control
+	+ Componenetes
+		+ Acordeon
+		+ Alerts
+		+ Buttons
+		+ Buttons Group
+		+ Cards
+		+ Carrousel
+		+ Collapse
+		+ Modal
+		+ Nav & Tabs
+			
+
+
+
+
+
++ Fontawesome
+	+ https://fontawesome.com/
+	+ cdn https://cdnjs.com/libraries/font-awesome
+
+
