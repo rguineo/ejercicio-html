@@ -7,7 +7,7 @@
 	+ Tablas
 	+ Formularios
 		+ Form Control
-	+ Componenetes
+	+ Componentes
 		+ Acordeon
 		+ Alerts
 		+ Buttons
@@ -17,11 +17,6 @@
 		+ Collapse
 		+ Modal
 		+ Nav & Tabs
-			
-
-
-
-
 
 + Fontawesome
 	+ https://fontawesome.com/
