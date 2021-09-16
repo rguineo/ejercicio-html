@@ -32,5 +32,6 @@ con los siguientes componentes
 	+ Unas Cards con informacion de productos (imagen + cuerpo)
 	+ Un formulario de contacto
 	+ Un footer con los derechos de copia
+	
 
 
