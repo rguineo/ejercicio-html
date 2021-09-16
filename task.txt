@@ -23,3 +23,14 @@
 	+ cdn https://cdnjs.com/libraries/font-awesome
 
 
+Ejercicio.
+Armar Pagina de Inicio (index.html)
+con los siguientes componentes
+
+	+ Header donde colocar un logo (imagen) a la izquierda y un menu en el centro
+	+ Un carrusel con 3 imagenes
+	+ Unas Cards con informacion de productos (imagen + cuerpo)
+	+ Un formulario de contacto
+	+ Un footer con los derechos de copia
+
+
