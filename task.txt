@@ -32,7 +32,7 @@ con los siguientes componentes
 	+ Un carrusel con 3 imagenes
 	+ Unas Cards con informacion de productos (imagen + cuerpo)
 	+ Un formulario de contacto
-	+ Un footer con los derechos de copia
+	+ Un footer con direccion, links de interes, un minimapa (google) los derechos de copia
 
 
 
