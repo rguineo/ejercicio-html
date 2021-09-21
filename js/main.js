@@ -13,60 +13,28 @@
 // alert("Hola " + nombre + " " + apellido + ", bienvenido a nuestro sitio web")
 // console.log("Hola " + nombre + " " + apellido + ", bienvenido a nuestro sitio web")
 
-var num1 = prompt("Ingrese el lado de un cuadrado", "")
+//var num1 = prompt("Ingrese el lado de un cuadrado", "")
 // var num2 = prompt("Ingrese el 2° numero", "")
 
-document.write("El area del cuadrado es: " + area_cuadrado(parseInt(num1)) + "<br>")
-document.write("El perimetro del cuadrado es: " + perimetro_cuadrado(parseInt(num1)) + "<br>")
+// document.write("El area del cuadrado es: " + area_cuadrado(parseInt(num1)) + "<br>")
+// document.write("El perimetro del cuadrado es: " + perimetro_cuadrado(parseInt(num1)) + "<br>")
 
 
+// function area_cuadrado(a){
+// 	return a*a
+// }
 
+// function perimetro_cuadrado(a){
+// 	return 4*a
+// }
 
-function area_cuadrado(a){
-	return a*a
-}
+// function area_rectangulo(a){
+// 	return a*b
+// }
 
-function perimetro_cuadrado(a){
-	return 4*a
-}
-
-function area_rectangulo(a){
-	return a*b
-}
-
-function perimetro_rectangulo(a){
-	return 2*a+2*b
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// function perimetro_rectangulo(a){
+// 	return 2*a+2*b
+// }
 
 // var resultado = parseInt(num1) + parseInt(num2)
 // document.write("El resultado es: " + (parseInt(num1)+parseInt(num2)))
@@ -119,3 +87,22 @@ function perimetro_rectangulo(a){
 // 		document.write("El resultado de la division es: ERROR DIVISION POR 0 <br>")
 // 	}
 // }
+
+
+
+// Arreglos
+
+var frutas = ["Manzana", "Pera", "Sandia", "Cereza", "Naranja", "Platano", "Mango", "Chirimoya", "Papaya"]
+
+document.write("La cantidad de elementos del arreglo son: "+ frutas.length + "<br>")
+
+// document.write("La fruta "+ frutas[0] + " es deliciosa" + "<br>")
+// document.write("La fruta "+ frutas[1] + " es deliciosa" + "<br>")
+// document.write("La fruta "+ frutas[2] + " es deliciosa" + "<br>")
+// document.write("La fruta "+ frutas[3] + " es deliciosa" + "<br>")
+
+
+for(i=0; i<frutas.length; i++){
+	document.write("La fruta "+ frutas[i] + " es deliciosa" + "<br>")
+}
+
