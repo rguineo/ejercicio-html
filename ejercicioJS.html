@@ -2,35 +2,56 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta keyword="venta, venta insumos">
 
 	<title>Ejercicio JS</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
 </head>
 <body>
+	<div class="container">
+		<center><h1>Ejercicio JavaScript</h1></center>
+		<hr>
 
-	<h1>Ejercicio JavaScript</h1>
+		<div class="row g-3">
+			<div class="col-md-3">
+				<input class="form-control" type="text" name="name[]" id="TextId" placeholder="#ID">
+			</div>
 
-	<input type="text" name="name[]" id="TextId" placeholder="#ID">
-	<input type="text" name="name[]" id="TextNombre" placeholder="Nombre">
-	<input type="text" name="name[]" id="TextApellido" placeholder="Apellido">
-	<input type="text" name="name[]" id="TextEdad" placeholder="Edad">
+			<div class="col-md-3">
+				<input class="form-control" type="text" name="name[]" id="TextNombre" placeholder="Nombre">
+			</div>
 
-	<input type="button" value="Insertar" onclick="InsertarEnTabla()">
-	<br>
+			<div class="col-md-3">
+				<input class="form-control" type="text" name="name[]" id="TextApellido" placeholder="Apellido">
+			</div>
 
-	<table>
-		<thead>
-			<tr> 
-				<th> #ID </th>
-				<th> Nombre </th>
-				<th> Apellido </th>
-				<th> Edad </th>
-			</tr>
-		</thead>
-		<tbody id='TableBody'>
+			<div class="col-md-3">
+				<input class="form-control" type="text" name="name[]" id="TextEdad" placeholder="Edad">
+			</div>
 			
-		</tbody>
-	</table>
+			<div class="d-grid gap-2">
+			  <button class="btn btn-primary" type="button" onclick="InsertarEnTabla()">Insertar</button>
+			</div>
+
+		</div>
+
+		
+		<br>
+		<hr>
+		<table class="table">
+			<thead>
+				<tr> 
+					<th> #ID </th>
+					<th> Nombre </th>
+					<th> Apellido </th>
+					<th> Edad </th>
+				</tr>
+			</thead>
+			<tbody id='TableBody'>
+			</tbody>
+		</table>		
+	</div>
 
 
 
@@ -38,6 +59,9 @@
 
 
 
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
