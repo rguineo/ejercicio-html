@@ -110,64 +110,79 @@
 
 // SWITCH
 
-var figura = prompt("Ingrese figura geometrica","")
-const PI = 3.141592653589793
+// var figura = prompt("Ingrese figura geometrica","")
+// const PI = 3.141592653589793
 
-switch (figura){
-	case 'cuadrado':
-		let lado = prompt("Ingrese el lado del cuadrado","")
-		document.write("El perimetro del cuadrado es: " + perimetro_cuadrado(parseInt(lado)) + "<br>")
-		document.write("El area del cuadrado es: " + area_cuadrado(parseInt(lado)) + "<br>")
-	break;
+// switch (figura){
+// 	case 'cuadrado':
+// 		let lado = prompt("Ingrese el lado del cuadrado","")
+// 		document.write("El perimetro del cuadrado es: " + perimetro_cuadrado(parseInt(lado)) + "<br>")
+// 		document.write("El area del cuadrado es: " + area_cuadrado(parseInt(lado)) + "<br>")
+// 	break;
 
-	case 'rectangulo':
-		let ladoa = prompt("Ingrese el lado a del rectangulo","")
-		let ladob = prompt("Ingrese el lado b del rectangulo","")
+// 	case 'rectangulo':
+// 		let ladoa = prompt("Ingrese el lado a del rectangulo","")
+// 		let ladob = prompt("Ingrese el lado b del rectangulo","")
 
-		document.write("El perimetro del rectangulo es: " + perimetro_rectangulo(parseInt(ladoa), parseInt(ladob)) + "<br>")
-		document.write("El area del rectangulo es: " + area_rectangulo(parseInt(ladoa), parseInt(ladob)) + "<br>")		
-	break;
+// 		document.write("El perimetro del rectangulo es: " + perimetro_rectangulo(parseInt(ladoa), parseInt(ladob)) + "<br>")
+// 		document.write("El area del rectangulo es: " + area_rectangulo(parseInt(ladoa), parseInt(ladob)) + "<br>")		
+// 	break;
 
-	case 'circulo':
-		let radio = prompt("Ingrese el radio del circulo", "")
-		document.write("El perimetro del circulo es: " + perimetro_circulo(parseInt(radio)).toFixed(2) + "<br>")
-		document.write("El area del circulo es: " + area_circulo(parseInt(radio)).toFixed(2) + "<br>")	
-	break;
+// 	case 'circulo':
+// 		let radio = prompt("Ingrese el radio del circulo", "")
+// 		document.write("El perimetro del circulo es: " + perimetro_circulo(parseInt(radio)).toFixed(2) + "<br>")
+// 		document.write("El area del circulo es: " + area_circulo(parseInt(radio)).toFixed(2) + "<br>")	
+// 	break;
 
-	case 'triangulo':
-		let base = prompt("Ingrese la base del triangulo", "")
-		let altura = prompt("Ingrese la base del triangulo", "")
+// 	case 'triangulo':
+// 		let base = prompt("Ingrese la base del triangulo", "")
+// 		let altura = prompt("Ingrese la base del triangulo", "")
 
-		document.write("El area del triangulo es: " + area_triangulo(parseInt(base), parseInt(altura)) + "<br>")
-	break;
-}
+// 		document.write("El area del triangulo es: " + area_triangulo(parseInt(base), parseInt(altura)) + "<br>")
+// 	break;
+// }
 
-function perimetro_cuadrado(a){
-	return 4 * a
-}
+// function perimetro_cuadrado(a){
+// 	return 4 * a
+// }
 
-function area_cuadrado(a){
-	return a * a
-}
+// function area_cuadrado(a){
+// 	return a * a
+// }
 
-function perimetro_rectangulo(a, b){
-	return 2 * a + 2 * b
-}
+// function perimetro_rectangulo(a, b){
+// 	return 2 * a + 2 * b
+// }
 
-function area_rectangulo(a, b){
-	return a * b
-}
+// function area_rectangulo(a, b){
+// 	return a * b
+// }
 
-function perimetro_circulo(r){
-	// return 2 * PI * r
-	return 2 * Math.PI * r
-}
+// function perimetro_circulo(r){
+// 	// return 2 * PI * r
+// 	return 2 * Math.PI * r
+// }
 
-function area_circulo(r){
-	// return PI * (r*r)
-	return Math.PI * Math.pow(r, 2)
-}
+// function area_circulo(r){
+// 	// return PI * (r*r)
+// 	return Math.PI * Math.pow(r, 2)
+// }
 
-function area_triangulo(b, h){
-	return (b * h) / 2
+// function area_triangulo(b, h){
+// 	return (b * h) / 2
+// }
+
+
+var names = document.getElementsByName('name[]')
+
+function InsertarEnTabla(){
+	var TableRow = "<tr> </tr>"
+
+		for(i=0; i < names.length; i++){
+			TableRow = TableRow.substring(0, TableRow.length-5) + "<td>" + names[i].value + "</td>" + TableRow.substring(TableRow.length-5)
+		}
+
+	var TrElement = document.createElement("tr")
+	TrElement.innerHTML = TableRow
+	document.getElementById("TableBody").appendChild(TrElement)
 }

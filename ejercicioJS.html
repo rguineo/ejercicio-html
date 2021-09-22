@@ -2,14 +2,35 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta keyword="venta, venta insumos">
+
 	<title>Ejercicio JS</title>
 </head>
 <body>
 
 	<h1>Ejercicio JavaScript</h1>
 
+	<input type="text" name="name[]" id="TextId" placeholder="#ID">
+	<input type="text" name="name[]" id="TextNombre" placeholder="Nombre">
+	<input type="text" name="name[]" id="TextApellido" placeholder="Apellido">
+	<input type="text" name="name[]" id="TextEdad" placeholder="Edad">
 
+	<input type="button" value="Insertar" onclick="InsertarEnTabla()">
+	<br>
 
+	<table>
+		<thead>
+			<tr> 
+				<th> #ID </th>
+				<th> Nombre </th>
+				<th> Apellido </th>
+				<th> Edad </th>
+			</tr>
+		</thead>
+		<tbody id='TableBody'>
+			
+		</tbody>
+	</table>
 
 
 
