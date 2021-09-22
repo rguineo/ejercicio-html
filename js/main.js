@@ -92,17 +92,82 @@
 
 // Arreglos
 
-var frutas = ["Manzana", "Pera", "Sandia", "Cereza", "Naranja", "Platano", "Mango", "Chirimoya", "Papaya"]
+// var frutas = ["Manzana", "Pera", "Sandia", "Cereza", "Naranja", "Platano", "Mango", "Chirimoya", "Papaya"]
 
-document.write("La cantidad de elementos del arreglo son: "+ frutas.length + "<br>")
+// document.write("La cantidad de elementos del arreglo son: "+ frutas.length + "<br>")
 
-// document.write("La fruta "+ frutas[0] + " es deliciosa" + "<br>")
-// document.write("La fruta "+ frutas[1] + " es deliciosa" + "<br>")
-// document.write("La fruta "+ frutas[2] + " es deliciosa" + "<br>")
-// document.write("La fruta "+ frutas[3] + " es deliciosa" + "<br>")
+// // document.write("La fruta "+ frutas[0] + " es deliciosa" + "<br>")
+// // document.write("La fruta "+ frutas[1] + " es deliciosa" + "<br>")
+// // document.write("La fruta "+ frutas[2] + " es deliciosa" + "<br>")
+// // document.write("La fruta "+ frutas[3] + " es deliciosa" + "<br>")
 
 
-for(i=0; i<frutas.length; i++){
-	document.write("La fruta "+ frutas[i] + " es deliciosa" + "<br>")
+// for(i=0; i<frutas.length; i++){
+// 	document.write("La fruta "+ frutas[i] + " es deliciosa" + "<br>")
+// }
+
+
+
+// SWITCH
+
+var figura = prompt("Ingrese figura geometrica","")
+const PI = 3.141592653589793
+
+switch (figura){
+	case 'cuadrado':
+		let lado = prompt("Ingrese el lado del cuadrado","")
+		document.write("El perimetro del cuadrado es: " + perimetro_cuadrado(parseInt(lado)) + "<br>")
+		document.write("El area del cuadrado es: " + area_cuadrado(parseInt(lado)) + "<br>")
+	break;
+
+	case 'rectangulo':
+		let ladoa = prompt("Ingrese el lado a del rectangulo","")
+		let ladob = prompt("Ingrese el lado b del rectangulo","")
+
+		document.write("El perimetro del rectangulo es: " + perimetro_rectangulo(parseInt(ladoa), parseInt(ladob)) + "<br>")
+		document.write("El area del rectangulo es: " + area_rectangulo(parseInt(ladoa), parseInt(ladob)) + "<br>")		
+	break;
+
+	case 'circulo':
+		let radio = prompt("Ingrese el radio del circulo", "")
+		document.write("El perimetro del circulo es: " + perimetro_circulo(parseInt(radio)).toFixed(2) + "<br>")
+		document.write("El area del circulo es: " + area_circulo(parseInt(radio)).toFixed(2) + "<br>")	
+	break;
+
+	case 'triangulo':
+		let base = prompt("Ingrese la base del triangulo", "")
+		let altura = prompt("Ingrese la base del triangulo", "")
+
+		document.write("El area del triangulo es: " + area_triangulo(parseInt(base), parseInt(altura)) + "<br>")
+	break;
 }
 
+function perimetro_cuadrado(a){
+	return 4 * a
+}
+
+function area_cuadrado(a){
+	return a * a
+}
+
+function perimetro_rectangulo(a, b){
+	return 2 * a + 2 * b
+}
+
+function area_rectangulo(a, b){
+	return a * b
+}
+
+function perimetro_circulo(r){
+	// return 2 * PI * r
+	return 2 * Math.PI * r
+}
+
+function area_circulo(r){
+	// return PI * (r*r)
+	return Math.PI * Math.pow(r, 2)
+}
+
+function area_triangulo(b, h){
+	return (b * h) / 2
+}
